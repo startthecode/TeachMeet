@@ -18,7 +18,11 @@ module.exports = {
           800: "#1D2F12",
           900: "#141F0C", // Darkest shade
         },
-        clr_secondary: "#f0f2f5",
+        clr_secondary: "#f0f2f0",
+      },
+      screens: {
+        largeDESK: "1600px",
+        xlargeDESK: "2000px",
       },
     },
   },

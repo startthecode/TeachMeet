@@ -4,7 +4,11 @@ import { SideMenuCard } from "../ui/SideMenuCard";
 export const SideBar = ({ expand }) => {
   return (
     <div>
-      <img src="../" alt="" />
+      <img
+        src="http://localhost:5173/src/assets/images/TeachMeet.png"
+        className=" h-[4.5rem] mx-auto mb-8"
+        alt=""
+      />
       <SideMenuCard
         expand={expand}
         iconColor={"text-[#3A5B22]"}

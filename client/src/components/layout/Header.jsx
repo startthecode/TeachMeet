@@ -6,8 +6,11 @@ import { Menu, Button, Text, rem, Avatar, Select } from "@mantine/core";
 const Header = () => {
   let heading = useSelector(getHeadingState);
   return (
-    <div className=" py-4 border-b-2 border-grey-500 w-full flex justify-between">
-      <h1 className="Header_heading  font-medium my-0"> {heading.heading}</h1>
+    <div className=" py-4 border-b-2 border-slate-100 w-full flex justify-between ">
+      <div>
+        <h1 className="Header_heading  font-medium my-0"> {heading.heading}</h1>
+        <p className="text-[1rem] text-gray-600">Welcome to the teach meet</p>
+      </div>
 
       <div className="flex items-center">
         <Select
@@ -15,13 +18,13 @@ const Header = () => {
           leftSection={
             <Icon
               icon="carbon:search"
-              className="w-5 h-6 text-gray-500 text-clr_primary-500"
+              className="w-5 h-6  text-clr_primary-500"
             />
           }
           classNames={{
             wrapper: "mr-4",
             input:
-              "block w-full px-4 py-6 ps-10 text-sm text-gray-900 border border-gray-200 rounded-lg bg-white bg-opacity-80 outline-none text-lg",
+              "block w-full px-4 py-6 ps-10 text-sm text-gray-900 border border-slate-50 rounded-lg bg-white bg-opacity-80 outline-none text-lg",
           }}
           placeholder="Search"
           data={["React", "Angular", "Vue", "Svelte"]}

@@ -1,0 +1,7 @@
+.tabButton {
+  transition: 0.3s linear;
+  &[data-active="true"],
+  &:hover {
+    @apply bg-clr_primary-500 text-white border-0;
+  }
+}
